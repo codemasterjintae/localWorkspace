@@ -1,0 +1,63 @@
+body {
+  background-color: #131927;
+}
+.menu_bar {
+  padding: 30px 0;
+  color: #ffffff;
+  font-family: "Heebo-Bold";
+}
+.menu_option,
+.menu_icon {
+  width: 20%;
+  text-align: center;
+}
+.bodycontent_center {
+  color: #ffffff;
+  font-family: "Heebo-Bold";
+}
+.menu_option {
+  padding-top: 10px;
+}
+.menu_option_text {
+  cursor: pointer;
+  font-size: 20px;
+}
+.menu_option_text:hover {
+  color: #f1f1f1;
+  font-size: 17px;
+}
+.activity_icon {
+  height: 35px;
+  width: 35px;
+  padding-left: 20px;
+  margin-top: 20px;
+}
+.line {
+  background-color: white;
+}
+.search_bar {
+  padding-top: 10px;
+  position: relative;
+}
+.search_inputfield {
+  background: transparent;
+  color: #ffffff;
+  font-family: "Heebo-Semibold";
+  padding: 0 10px 5px 0;
+  border: none;
+  border-bottom: 1px solid;
+}
+.search_inputfield:focus {
+  outline: unset;
+}
+.search_icon_div {
+  width: 40px;
+  height: 30px;
+  position: absolute;
+  left: 120px;
+  top: 5px;
+}
+.header_menu_icon {
+  padding: 15px 0 0 30px;
+  cursor: pointer;
+}

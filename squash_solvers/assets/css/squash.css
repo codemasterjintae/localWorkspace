@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+}
+.squash_container {
+  margin: 0;
+  width: 100%;
+  max-width: unset;
+}
+.squash_row {
+  height: 100%;
+}
+.squash_sochead_container {
+  height: 40px;
+}
+.squash_social_head {
+  background-color: #3f51b5;
+}
+.icon {
+  width: 15px;
+  height: auto;
+}
+.sq_icon_div {
+  height: 100%;
+  display: flex;
+  width: 35px;
+  border-right: 0.2px solid rgba(255, 255, 255, 0.15);
+  align-items: center;
+  justify-content: center;
+}
+.squash_header_social {
+  margin-left: 10px;
+}
+.sq_contact_det {
+  float: right;
+}
+.squash_header_social,
+.sq_contact_det {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.sq_condet_margin {
+  margin: 0 10px;
+  font-family: Heebo-Regular;
+}
+.squash_logo {
+  width: 100px;
+  height: 70px;
+}
+.squash_navbar_right {
+  display: flex;
+  align-items: center;
+}
+.sq_nav_menu {
+  display: flex;
+  font-family: Heebo-SemiBold;
+}
+.sq_menu {
+  margin-right: 20px;
+}
+.sq_condet_logo {
+  margin-right: 5px;
+}
