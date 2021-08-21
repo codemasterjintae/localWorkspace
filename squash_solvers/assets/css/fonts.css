@@ -10,3 +10,27 @@
   font-family: "Heebo-Regular";
   src: url(../fonts/Heebo-Regular.ttf);
 }
+@font-face {
+  font-family: "Signika-Bold";
+  src: url(../fonts/SignikaNegative-Bold.ttf);
+}
+@font-face {
+  font-family: "Signika-Light";
+  src: url(../fonts/SignikaNegative-Light.ttf);
+}
+@font-face {
+  font-family: "Signika-Regular";
+  src: url(../fonts/SignikaNegative-Regular.ttf);
+}
+@font-face {
+  font-family: "Signika-SemiBold";
+  src: url(../fonts/SignikaNegative-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Amatic-Bold";
+  src: url(../fonts/AmaticSC-Bold.ttf);
+}
+@font-face {
+  font-family: "Amatic-Regular";
+  src: url(../fonts/AmaticSC-Regular.ttf);
+}

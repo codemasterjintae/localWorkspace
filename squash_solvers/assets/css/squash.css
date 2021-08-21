@@ -13,7 +13,7 @@ body {
   height: 40px;
 }
 .squash_social_head {
-  background-color: #3f51b5;
+  background-color: #0070b8;
 }
 .icon {
   width: 15px;
@@ -41,11 +41,14 @@ body {
 }
 .sq_condet_margin {
   margin: 0 10px;
-  font-family: Heebo-Regular;
+  font-family: Signika-Regular;
 }
 .squash_logo {
   width: 100px;
   height: 70px;
+}
+.squash_navbar {
+  box-shadow: 1px 1px 10px rgb(180, 180, 180, 0.8);
 }
 .squash_navbar_right {
   display: flex;
@@ -53,11 +56,123 @@ body {
 }
 .sq_nav_menu {
   display: flex;
-  font-family: Heebo-SemiBold;
+  font-family: Signika-SemiBold;
 }
 .sq_menu {
   margin-right: 20px;
 }
 .sq_condet_logo {
   margin-right: 5px;
+}
+.squash_property_imgdiv {
+  margin-top: 10px;
+}
+.squash_property_img {
+  width: 100%;
+  height: 400px;
+}
+.squash_aboutus {
+  /* display: flex; */
+  margin-top: 10px;
+  box-shadow: 1px 1px 10px rgb(180, 180, 180, 0.8);
+}
+.squash_companydet {
+  width: 100%;
+  padding: 30px auto;
+  text-align: center;
+}
+.motivational_quote {
+  font-family: Amatic-Bold;
+  width: 70%;
+  font-size: 28px;
+  margin: 10px auto;
+  padding: 50px 0 20px 0;
+  font-weight: bolder;
+}
+.company_desc_title {
+  font-family: Signika-Bold;
+  width: 50%;
+  font-size: 24px;
+  margin: 10px auto;
+}
+.company_description {
+  font-family: Signika-Light;
+  width: 50%;
+  font-size: 18px;
+  margin: 0px auto;
+  padding: 20px;
+  color: #0070b8;
+  /* border: 1px solid #0070b8;
+  border-radius: 5px; */
+}
+.squash_reachus,
+.squash_pricing {
+  width: 100%;
+  padding: 30px auto;
+  text-align: center;
+}
+.squash_reach_title {
+  font-family: Signika-Bold;
+  width: 50%;
+  font-size: 24px;
+  margin: 10px auto;
+  color: #0070b8;
+}
+.Contact_details {
+  font-family: Signika-Light;
+  width: 50%;
+  font-size: 18px;
+  margin: 0px auto;
+  padding: 10px;
+  color: #0070b8;
+}
+.reach_icon {
+  width: 20px;
+  height: auto;
+}
+.squash_wt_we_do {
+  width: 100%;
+  padding: 30px auto;
+  text-align: center;
+}
+.work_desc {
+  font-family: Signika-Bold;
+  width: 50%;
+  font-size: 24px;
+  margin: 10px auto;
+  color: #0070b8;
+}
+.squash_work_section {
+  font-family: Signika-Light;
+  width: 50%;
+  font-size: 18px;
+  margin: 0px auto;
+  padding: 10px;
+  color: #0070b8;
+}
+.long_title {
+  width: 70%;
+}
+.squash_footer {
+  background-color: #0070b8;
+  position: relative;
+  bottom: 0;
+  /* height: 50px; */
+  color: #fff;
+  text-align: center;
+  font-family: Signika-SemiBold;
+  padding: 10px 0;
+}
+.squash_endnote {
+  font-size: 20px;
+  font-family: Signika-Regular;
+}
+.squash_website {
+  font-size: 26px;
+  /* font-family: Signika-SemiBold; */
+}
+.copyright_information {
+  font-family: Signika-Light;
+  font-size: 14px;
+  opacity: 0.8;
 }
