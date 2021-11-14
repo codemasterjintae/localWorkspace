@@ -1,18 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import FetchDetails from './Api.jsx';
-class Main extends React.Component {
-  
-  render() { 
-    return ( 
-      <div>
-          <FetchDetails />
-          Hello
-      </div>
-     );
-  }
-}
- 
-ReactDOM.render(<Main/> ,document.getElementById('root'));
+// import createSagaMiddleware from 'redux-saga';
+import App from './App';
+import { createStore, applyMiddleware } from 'redux';
+import NoteReducer from './Reducer';
+import { Provider } from 'react-redux';
+import thunk from 'redux-thunk';
+function Main() {
 
+  let store = createStore(NoteReducer, applyMiddleware(thunk));
+  store.subscribe(() => console.log(store.getState()));
+
+  return (
+    <Provider store={store}>
+      <App />
+    </Provider>
+  );
+}
+ReactDOM.render(<Main />, document.getElementById('root'));

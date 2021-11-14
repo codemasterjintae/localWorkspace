@@ -1,25 +1,53 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import './style.css';
+import { AddNotes,SetNotes} from './Action';
+import {SaveNotes, LoadNotes} from "./Reducer";
+import { connect } from 'react-redux';
+import * as actionCreator from './actions/actions';
+function App(props) {
+  const { dispatch, notes } = props;
+  const [data, setData] = useState([]);
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  const handleEvent = e => {
+    setData(e.target.value);
+    // console.log('App', e.target.value);
+  };
+  const handleAdd = () => {
+    dispatch(AddNotes(data));
+    setData('')
+  }
+const onSave = () => {
+  dispatch(SaveNotes());
+} 
+const onLoad = () => {
+  dispatch(LoadNotes());
+}
+
+return (
+    <div>
+      <input type="text" name="note" onChange={handleEvent} value={data}/>
+      <button onClick={handleAdd}>Add Note</button>
+      <div><ul>{notes != undefined ? notes.map(value => <li key={value}>{value}</li>) : ''}</ul></div>
+      <button onClick={onSave}>Save</button>
+      <button onClick={onLoad}>Load</button>
+
     </div>
   );
 }
 
-export default App;
+const mapStateToProps = state => {
+  return {
+    notes: state && state.notes
+  };
+};
+
+const mapDispatchToProps = dispatch => {
+  return {
+    dispatch
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(App);
